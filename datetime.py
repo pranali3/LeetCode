@@ -13,8 +13,8 @@ if __name__ == "__main__":
     start_datetime = datetime(2022, 1, 1, 12, 0, 0)
     end_datetime = datetime(2022, 1, 5, 12, 0, 0)
     interval_duration = timedelta(days=1)
-    # intervals = list(split_datetime_range(start_datetime, end_datetime, interval_duration))
-    print(split_datetime_range(start_datetime, end_datetime, interval_duration))
+    intervals = list(split_datetime_range(start_datetime, end_datetime, interval_duration))
+    # print(split_datetime_range(start_datetime, end_datetime, interval_duration))
 
-    # for interval in intervals:
-    #     print(interval)
+    for interval in intervals:
+        print(interval)
